@@ -95,7 +95,7 @@ header .navbar-brand img {
 .home-section {
   background: linear-gradient(135deg, #4CAF50, #A5D6A7); 
   color: white;
-  padding: 80px 0; /* Aumentado para melhor visualização */
+  padding: 80px 0; 
   text-align: center;
   position: relative;
   overflow: hidden;
