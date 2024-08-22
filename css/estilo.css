@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500&display=swap');
+
+body {
+  background-color: #eef6f3;
+  font-family: 'Poppins', sans-serif;
+  cursor: url('../img/cursor-leaf.png'), auto; 
+}
+
+/* Animação de texto */
+.text-animation {
+  font-family: 'Lobster', cursive;
+  color: #4CAF50; 
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Estilização do cabeçalho e do logo */
+header .navbar-brand img {
+  width: 80px; 
+  height: auto; 
+}
+
+.img-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.logo-animation {
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilização dos botões do cabeçalho */
+.navbar-nav .nav-link {
+  color: #4CAF50; 
+  font-weight: 500; 
+  padding: 8px 16px; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px; 
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #A5D6A7; 
+  color: white; 
+}
+
+.navbar-nav .btn-success {
+  background-color: #388E3C; 
+  border-color: #388E3C; 
+  font-weight: 600; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .btn-success:hover {
+  background-color: #2E7D32; 
+  transform: scale(1.05); 
+  color: white; 
+}
+
+/* Estilização das seções principais */
+.home-section {
+  background: linear-gradient(135deg, #4CAF50, #A5D6A7); 
+  color: white;
+  padding: 80px 0; /* Aumentado para melhor visualização */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-section h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.home-section p {
+  font-size: 1.25rem;
+}
+
+.home-section .img-animation {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+}
+/* Estilização do campo de pesquisa e botão */
+.search-box {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-search {
+  background-color: #4CAF50;
+  border: 2px solid #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 0 5px 5px 0;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-search:hover {
+  background-color: #388E3C;
+  border-color: #388E3C;
+  transform: scale(1.05);
+}
+
+.btn-search i {
+  margin-right: 5px;
+}
+
+
+/* Seções gerais */
+.portfolio-section,
+.about-section,
+.contact-section {
+  background: #fff;
+  padding: 60px 0;
+}
+.about-section p {
+  text-align: justify;
+}
+
+.portfolio-card,
+.footer-section {
+  background-color: #e6f2ed; 
+}
+
+.portfolio-card img {
+  border-radius: 10px;
+}
+
+/* Seção de serviços */
+.servicos-section {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.servicos-card {
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.servicos-card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon i {
+  color: #4CAF50;
+}
+
+/* Galeria */
+.gallery {
+  margin-top: 60px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+.blog-section {
+    background: #f9f9f9;
+    padding: 60px 0;
+}
+
+.blog-post {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.blog-post h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.blog-post h3 a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.blog-post h3 a:hover {
+    text-decoration: underline;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    margin: 0 15px 15px;
+    color: #666;
+}
+
+.blog-post .btn-primary {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.blog-post .btn-primary:hover {
+    background-color: #388E3C;
+    border-color: #388E3C;
+    transform: scale(1.05);
+}
+
+.contact-section {
+  background: #f9f9f9;
+  padding: 60px 0;
+}
+
+.contact-details {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details h4 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.contact-details p {
+  margin-bottom: 20px;
+}
+
+.contact-details a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+.clientes-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.clientes-section h2 {
+  font-size: 2.5rem;
+  color: #4CAF50;
+  margin-bottom: 40px;
+}
+
+.cliente-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.cliente-card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.cliente-card h4 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.cliente-card p {
+  font-size: 1rem;
+  color: #333;
+  font-style: italic;
+}
+
+
+/* Estilização do formulário */
+form .form-group label {
+  font-weight: 500;
+}
+
+form .form-control {
+  border-radius: 5px;
+  box-shadow: none;
+  border-color: #ddd;
+}
+
+form .form-control:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+form .btn-success {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+form .btn-success:hover {
+  background-color: #388E3C;
+  border-color: #388E3C;
+  transform: scale(1.05);
+  color: white;
+}
+
+
+/* Rodapé */
+.footer-section {
+  background-color: #4CAF50; 
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-section .logo-footer img {
+  animation: rotate 10s linear infinite;
+}
+
+.footer-section h5 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-section .social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer-section .social-icons a:hover {
+  color: #A5D6A7; 
+}
+
+
+.btn-primary {
+  background-color: #4CAF50; 
+  border-color: #4CAF50; 
+  color: white; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  font-size: 1rem; 
+  font-weight: 600; 
+  text-transform: uppercase; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.btn-primary:hover {
+  background-color: #388E3C; 
+  border-color: #388E3C; 
+  transform: scale(1.05); 
+}
+
+
+.footer-section {
+    position: relative;
+    background-color: #4CAF50; 
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    overflow: hidden; 
+}
+
+.floriculture-car {
+    position: absolute;
+    bottom: 20px; 
+    left: -200px; 
+    width: 150px; 
+    height: auto;
+    animation: drive 10s linear infinite;
+}
+
+@keyframes drive {
+    0% {
+        left: -200px; 
+    }
+    100% {
+        left: 100%; /
+    }
+}
+
+
+/* Borboletas animadas */
+.butterfly {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url('../img/butterfly.png'); 
+  background-size: cover;
+  animation: flutter 10s infinite;
+}
+
+@keyframes flutter {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(50vw) translateY(-50vh);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+
